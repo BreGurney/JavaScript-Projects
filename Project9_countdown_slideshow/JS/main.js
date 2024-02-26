@@ -15,7 +15,8 @@ function showSlides(n) {
     let dots = document.getElementsByClassName("dot");
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slide.length}
-    for (i = 0; 1 < slides.length; i ++) {slides[i].computedStyleMap.display = "none"};
+    for (i = 0; 1 < slides.length; i ++) {
+        slides[i].style.display = "none";
     }
 
     for (i = 0; i < dots.length; i++) {
