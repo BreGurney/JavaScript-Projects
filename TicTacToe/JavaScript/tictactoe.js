@@ -13,11 +13,11 @@ function placeXOrO(squareNumber) {
         //This condition checks who's turn it is.
         if (activePlayer === 'X') {
             //If active player isi equal to 'X' of 'O' so, if not 'X' it must be 'O'.
-            select.style.backgroundImage = 'url(".\images\ex.png")';
+            select.style.backgroundImage = 'url("./images/ex.png")';
             //Active player may only be 'X' or 'O' so, if not 'X' it must be 'O'.
         } else {
             //If activePlayer is equal to 'O', the o.png is places in HTML
-            select.style.backgroundImage = 'url(".\images\o.png")';
+            select.style.backgroundImage = 'url("./images/o.png")';
         }
         //squareNumber and activePlayer are concatenated together and added to array.
         selectedSquares.push(squareNumber + activePlayer);
@@ -34,7 +34,7 @@ function placeXOrO(squareNumber) {
         }
 
         //This function plays placement sound.
-        audio(".\media\place.mp3");
+        audio("./media/place.mp3");
         //This condidtion checks to see if it is the computers turn.
         if (activePlayer === 'O') {
             //This function diables clicking for computers turn.
